@@ -8,6 +8,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'app.js',
+        clean: true
     },
     mode: "development",
     resolve: {
@@ -36,6 +37,10 @@ module.exports = {
                     "css-loader",
                     "sass-loader",
                 ],
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
             },
         ]
     },
