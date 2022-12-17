@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+// Colors
+$color-white: hsl(0, 0%, 100%);
+$color-soft-red: hsl(345, 95%, 68%);
+$color-grayish-blue: hsl(237, 18%, 59%);
+$color-dark-desaturated-blue: hsl(236, 21%, 26%);
+$color-very-dark-blue: hsl(235, 16%, 14%);
+$color-black: hsl(234, 17%, 12%);
+
+// Font size
+$font-size-body: 14px;
+
+// Font
+$font-family: 'Red Hat Text', sans-serif;
+
+//Selector universal
+@import "universal";
+
+//Mixins
+@mixin center() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: $font-family;
+    color: $color-white;
+    background-color: $color-very-dark-blue;
+    background-image: url('../assets/images/bg-stars.svg');
+}
+
+#app {
+    width: 100vw;
+    height: 100vh;
+    @include center();
+
+    h1 {
+        font-weight: 600;
+        letter-spacing: 10px;
+    }
+}
