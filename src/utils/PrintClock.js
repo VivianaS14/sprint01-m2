@@ -10,6 +10,7 @@ const PrintTime = () => {
     hours.innerText = timeLeft.h;
     minutes.innerText = timeLeft.m;
     seconds.innerText = timeLeft.s;
+
 }
 
 export { PrintTime };

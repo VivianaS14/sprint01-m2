@@ -1,5 +1,18 @@
 $color-soft-red: hsl(345, 95%, 68%);
+$color-grayish-blue: hsl(237, 18%, 59%);
 $color-very-dark-blue: hsl(235, 16%, 14%);
+$color-black: hsl(234, 17%, 12%);
+
+.contain-timer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+
+    .title {
+        color: $color-grayish-blue;
+        letter-spacing: 0.5rem;
+    }
+}
 
 .timer-element {
     width: 10rem;
@@ -13,12 +26,12 @@ $color-very-dark-blue: hsl(235, 16%, 14%);
     position: relative;
     text-align: center;
     overflow: hidden;
-
+    
     &::before, &::after {
         content: '';
         width: 1rem;
         height: 1rem;
-        background: #000;
+        background: $color-black;
         border-radius: 50%;
         position: absolute;
         top: calc(70% - 30px);

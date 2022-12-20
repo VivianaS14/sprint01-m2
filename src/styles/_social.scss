@@ -1,0 +1,21 @@
+$color-soft-red: hsl(345, 95%, 68%);
+
+.social-media {
+    width: 100vw;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-list {
+    margin-top: 5rem;
+    list-style: none;
+    display: flex;
+    flex-flow: nowrap;
+    gap: 3rem;
+
+    img:hover {
+        background-color: $color-soft-red;
+        border-radius: 5px;
+    }
+}

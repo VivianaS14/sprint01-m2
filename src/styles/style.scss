@@ -1,11 +1,11 @@
 //Selector universal
 @use "universal";
 
-//Contenedor clocks
-@use "components";
-
 //Contador
-@use "./timer";
+@use "timer";
+
+//Social media
+@use "social";
 
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
@@ -22,10 +22,10 @@ $font-size-body: 14px;
 $font-family: 'Red Hat Text', sans-serif;
 
 //Mixins
-@mixin center() {
+@mixin display() {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-flow: column nowrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -41,14 +41,14 @@ body {
     height: 100vh;
     background: url('../assets/images/pattern-hills.svg') no-repeat bottom;
     background-size: contain;
-    @include center();
-
+    @include display();
+    
     h2 {
+        margin-top: 10rem;
         letter-spacing: 10px;
     }
 
     .countdown {
-        margin-top: 3rem;
         display: flex;
         flex-direction: row;
     }
