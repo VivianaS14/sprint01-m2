@@ -1,4 +1,4 @@
-import { timeLeft } from "../utils/InitTime";
+import { timeLeft } from "./InitTime";
 
 const days = document.querySelector('.days');
 const hours = document.querySelector('.hours');

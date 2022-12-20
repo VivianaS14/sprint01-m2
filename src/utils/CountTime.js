@@ -1,5 +1,5 @@
 import { timeLeft } from "./InitTime";
-import { PrintTime } from "../templates/PrintClock";
+import { PrintTime } from "./PrintClock";
 
 const CountTime = (_totalSeconds) => {
     if (_totalSeconds > 0) {
