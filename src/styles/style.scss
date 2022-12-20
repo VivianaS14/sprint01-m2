@@ -1,3 +1,9 @@
+//Selector universal
+@use "universal";
+
+//Contenedor clocks
+@use "components";
+
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
 
 // Colors
@@ -14,12 +20,10 @@ $font-size-body: 14px;
 // Font
 $font-family: 'Red Hat Text', sans-serif;
 
-//Selector universal
-@import "universal";
-
 //Mixins
 @mixin center() {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -34,9 +38,13 @@ body {
 #app {
     width: 100vw;
     height: 100vh;
+    background-image: url('../assets/images/pattern-hills.svg');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
     @include center();
 
-    h1 {
+    h2 {
         font-weight: 600;
         letter-spacing: 10px;
     }
