@@ -1,3 +1,3 @@
 # Countdown Timer
 
-New years'eve countdown
+My Birthday countdown

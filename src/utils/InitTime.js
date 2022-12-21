@@ -9,13 +9,12 @@ let timeLeft = {
 }
 
 const InitTime = (_totalSeconds) => {
-    _totalSeconds = Math.floor((new Date('01.01.2023') - new Date()) / 1000);
+    _totalSeconds = Math.floor((new Date('01.14.2023') - new Date()) / 1000);
     SetTimeLeft(_totalSeconds);
     let interval = setInterval(() => {
         if (_totalSeconds < 0) clearInterval(interval);
         CountTime(_totalSeconds);
     }, 1000);
-
 }
 
 export { InitTime, timeLeft };
